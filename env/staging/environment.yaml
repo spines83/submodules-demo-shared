@@ -1,8 +1,10 @@
 #@data/values
 ---
 #@overlay/match missing_ok=True
-environment:
-- name: ENV
-  value: "staging"
-- name: ENDPOINT
-  value: "staging.foo.bar"
+#@overlay/match-child-defaults missing_ok=True
+shared:
+  environment:
+  - name: ENV
+    value: "staging"
+  - name: ENDPOINT
+    value: "staging.foo.bar"
