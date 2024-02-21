@@ -4,7 +4,5 @@
 #@overlay/match-child-defaults missing_ok=True
 shared:
   environment:
-  - name: ENV
-    value: "dev-a"
-  - name: ENDPOINT
-    value: "dev.foo.bar"
+    ENV: "dev-a"
+    ENDPOINT: "dev.foo.bar"
